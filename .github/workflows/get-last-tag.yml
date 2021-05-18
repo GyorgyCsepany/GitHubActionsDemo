@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Get the last tag
-        run: git describe --tags --abbrev=0
+        run: git describe --abbrev=0
