@@ -1,0 +1,16 @@
+name: Get the last tag
+
+on: 
+    push:
+        branches:
+            - 'master'
+    workflow_dispatch:
+     
+jobs:
+  last-tag:
+       
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get the last tag
+        run: git describe --tags --abbrev=0
