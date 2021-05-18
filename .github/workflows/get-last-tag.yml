@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-            ref: ${{ github.ref }}
+            fetch-depth: 0
       - name: Get the last tag
         run: git describe --abbrev=0
