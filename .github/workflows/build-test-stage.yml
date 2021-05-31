@@ -1,0 +1,20 @@
+name: "Release and Hotfix: Build & Test"
+on: 
+    push:
+        branches:
+            - '*release*'
+            - '*hotfix*'
+                
+jobs:
+  release-hotflix-build-test:
+       
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Live by tag
+        run: echo "Deploy Live by tag"
+        
+        
+        
+        
+        
+        
